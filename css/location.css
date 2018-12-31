@@ -8,7 +8,6 @@
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.035rem;
   color: white;
 
   border: 0;
@@ -33,4 +32,9 @@
 #location a.findloc:after {
   content: "➤";
   margin-left: 5px;
+}
+
+#map a, #map a:hover {
+  padding: 0;
+  border: 0;
 }

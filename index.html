@@ -46,6 +46,7 @@
           <li><a href="#">Wish List</a></li>
           <li><a href="#">Gift Registry</a></li>
           <li><a href="#">Login / Register</a></li>
+          <li><a href="#">My Orders</a></li>
           <li><a href="#">My Cart</a></li>
         </ul>
       </div>
@@ -53,9 +54,7 @@
 
     <nav>
       <div class="container mx-auto px-4 flex justify-between h-16">
-        <a href="">
-          <div class="logo"></div>
-        </a>
+        <div class="logo"></div>
         <ul class="list-reset flex items-center">
           <li><a href="#" data-menu-category="new-arrivals">New Arrivals</a></li>
           <li><a href="#" data-menu-category="living">Living</a></li>
@@ -522,6 +521,7 @@
         </div>
       </div>
     </div>
+
     <div class="search">
       <div class="container px-4">
         <button id="btn-search-close"><i class="fas fa-times"></i></button>
@@ -561,11 +561,15 @@
     </div>
   </header>
 
+  <section class="hero py-20">
+    <div class="container mx-auto px-4 h-48"></div>
+  </section>
+
   <section class="featured-items py-16">
     <div class="container mx-auto flex flex-wrap">
-      <div class="card w-full overflow-hidden">
+      <div class="card w-full overflow-hidden ">
         <div id="featured--tables">
-          <div class="flex flex-col justify-between p-8">
+          <div class="flex flex-col justify-between p-8 h-64">
             <h4 class="inline-block">Dining <span></span> Tables</h4>
             <div class="card__text relative">
               <h2 class="pt-16 pb-2">New and on sale: Cosm Chair Instantly responds to your body.</h2>
@@ -602,8 +606,49 @@
     </div>
   </section>
 
-  <section id="location">
-    <div class="container mx-auto px-4 py-16">
+  <section class="extras py-20 bg-purple">
+    <div class="container mx-auto flex flex-wrap justify-between">
+      <div class="w-1/4 p-4">
+        <div class="flex h-48 justify-center items-center bg-yellow-lightest">
+          <h3>Membership</h3>
+        </div>
+      </div>
+      <div class="w-1/4 p-4">
+        <div class="flex h-48 justify-center items-center bg-yellow-lightest">
+          <h3>Membership</h3>
+        </div>
+      </div>
+      <div class="w-1/4 p-4">
+        <div class="flex h-48 justify-center items-center bg-yellow-lightest">
+          <h3>Membership</h3>
+        </div>
+      </div>
+      <div class="w-1/4 p-4">
+        <div class="flex h-48 justify-center items-center bg-yellow-lightest">
+          <h3>Membership</h3>
+        </div>
+      </div>
+      <div class="w-full p-4">
+        <div class="flex h-48 justify-center items-center bg-yellow-lightest">
+          <h3>Membership</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="socialshares py-20 bg-yellow">
+    <div class="container mx-auto px-4">
+      <div class="instafeed w-full flex">
+        <div class="w-1/4 h-48 mr-6 bg-blue-lightest flex justify-center items-center"><h3>Gram</h3></div>
+        <div class="w-1/4 h-48 mr-6 bg-blue-lightest flex justify-center items-center"><h3>Gram</h3></div>
+        <div class="w-1/4 h-48 mr-6 bg-blue-lightest flex justify-center items-center"><h3>Gram</h3></div>
+        <div class="w-1/4 h-48 bg-blue-lightest flex justify-center items-center"><h3>Gram</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location" class="py-20">
+    <div class="container mx-auto px-4">
       <div class="flex shadow">
         <div class="w-1/4 p-8 flex flex-col location__info">
           <div class="mb-auto">
@@ -625,7 +670,7 @@
   </section>
 
   <footer>
-    <div class="container mx-auto px-4 py-16 ">
+    <div class="container mx-auto px-4 py-20">
       <div href="" class="logo-black"></div>
       <div class="flex justify-between items-start">
         <div class="flex">
@@ -701,6 +746,7 @@
   <!-- jQuery + jQueryUI -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
   <!-- map -->
   <script>
     mapboxgl.accessToken =
@@ -708,12 +754,13 @@
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/fartinmartin/cjqckelr1ecx32rp7z39cj9nw',
-      center: [-75.911136, 42.097267],
-      zoom: 13.0
+      center: [-122.321220, 47.616770],
+      zoom: 15.0
     });
     // Add zoom and rotation controls to the map.
     map.addControl(new mapboxgl.NavigationControl());
   </script>
+
   <!-- my scripts! -->
   <script src="./js/app.js"></script>
 </body>

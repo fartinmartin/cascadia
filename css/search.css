@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgba(102, 153, 102, .9);
+  background: rgba(102, 153, 102, .95);
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -89,17 +89,17 @@
 }
 .search__suggestion > div > *:hover { filter: grayscale(0); opacity: 1; cursor: pointer; }
 
-.search__suggestion:nth-child(1) div div:nth-child(1) { background-image: url(https://source.unsplash.com/random); }
-.search__suggestion:nth-child(1) div div:nth-child(2) { background-image: url(https://source.unsplash.com/random); }
-.search__suggestion:nth-child(1) div div:nth-child(3) { background-image: url(https://source.unsplash.com/random); }
+.search__suggestion:nth-child(1) div div:nth-child(1) { background-image: url("../img/indoor01.jpg"); }
+.search__suggestion:nth-child(1) div div:nth-child(2) { background-image: url("../img/indoor02.jpg"); background-position: bottom; }
+.search__suggestion:nth-child(1) div div:nth-child(3) { background-image: url("../img/outdoor03.jpg"); background-position: bottom; }
 
-.search__suggestion:nth-child(2) div div:nth-child(1) { background-image: url(https://source.unsplash.com/random); }
-.search__suggestion:nth-child(2) div div:nth-child(2) { background-image: url(https://source.unsplash.com/random); }
-.search__suggestion:nth-child(2) div div:nth-child(3) { background-image: url(https://source.unsplash.com/random); }
+.search__suggestion:nth-child(2) div div:nth-child(1) { background-image: url("../img/outdoor02.jpg"); }
+.search__suggestion:nth-child(2) div div:nth-child(2) { background-image: url("../img/chair01.jpg"); }
+.search__suggestion:nth-child(2) div div:nth-child(3) { background-image: url("../img/living.jpg"); }
 
-.search__suggestion:nth-child(3) div div:nth-child(1) { background-image: url(https://source.unsplash.com/random); }
-.search__suggestion:nth-child(3) div div:nth-child(2) { background-image: url(https://source.unsplash.com/random); }
-.search__suggestion:nth-child(3) div div:nth-child(3) { background-image: url(https://source.unsplash.com/random); }
+.search__suggestion:nth-child(3) div div:nth-child(1) { background-image: url("../img/collection01.jpg"); }
+.search__suggestion:nth-child(3) div div:nth-child(2) { background-image: url("../img/collection02.jpg"); }
+.search__suggestion:nth-child(3) div div:nth-child(3) { background-image: url("../img/collection03.jpg"); }
 
 
 /* transitions! */

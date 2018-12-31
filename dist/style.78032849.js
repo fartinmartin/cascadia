@@ -191,7 +191,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/dropdowns.css":[function(require,module,exports) {
+},{"./../img/indoor01.jpg":[["indoor01.2d1b24ab.jpg","img/indoor01.jpg"],"img/indoor01.jpg"],"./../img/indoor02.jpg":[["indoor02.d0da9da0.jpg","img/indoor02.jpg"],"img/indoor02.jpg"],"./../img/outdoor03.jpg":[["outdoor03.1ae5c7de.jpg","img/outdoor03.jpg"],"img/outdoor03.jpg"],"./../img/outdoor02.jpg":[["outdoor02.1401d040.jpg","img/outdoor02.jpg"],"img/outdoor02.jpg"],"./../img/chair01.jpg":[["chair01.b9423dac.jpg","img/chair01.jpg"],"img/chair01.jpg"],"./../img/living.jpg":[["living.d7bbd350.jpg","img/living.jpg"],"img/living.jpg"],"./../img/collection01.jpg":[["collection01.15c0e317.jpg","img/collection01.jpg"],"img/collection01.jpg"],"./../img/collection02.jpg":[["collection02.b246e0c5.jpg","img/collection02.jpg"],"img/collection02.jpg"],"./../img/collection03.jpg":[["collection03.94cda234.jpg","img/collection03.jpg"],"img/collection03.jpg"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/dropdowns.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -248,7 +248,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49775" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53518" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

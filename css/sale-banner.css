@@ -10,3 +10,7 @@
   opacity: 0;
   overflow: hidden;
 }
+
+.sale-banner a {
+  color: #669966;
+}

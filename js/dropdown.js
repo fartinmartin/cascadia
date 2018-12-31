@@ -31,8 +31,22 @@ export function dropdown() {
       .removeClass("menu-item--not-active");
   });
 
-  $("#btn-search").hover( function () {
-    $(this).removeClass("menu-item--not-active")
-    $("nav a").addClass("menu-item--not-active")
-  });
+  $("#btn-search").hover(
+    function () {
+      $(this).removeClass("menu-item--not-active")
+      $("nav a").addClass("menu-item--not-active")
+      $(".dropdown").removeClass("dropdown--active");
+    },
+    function () {
+      $(this).removeClass("menu-item--not-active")
+      $("nav a").removeClass("menu-item--not-active")
+    }
+  );
+
+  $(".meta-nav").hover(
+    function () {
+      $("nav li > *").removeClass("menu-item--not-active")
+      $(".dropdown").removeClass("dropdown--active");
+    }
+  );
 }
