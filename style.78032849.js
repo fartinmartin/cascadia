@@ -216,12 +216,17 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../img/logo-black.svg":[["logo-black.cd854ca5.svg","img/logo-black.svg"],"img/logo-black.svg"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/style.css":[function(require,module,exports) {
+},{"./../img/logo-black.svg":[["logo-black.cd854ca5.svg","img/logo-black.svg"],"img/logo-black.svg"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/separators.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./settings.css":"css/settings.css","./sale-banner.css":"css/sale-banner.css","./meta-nav.css":"css/meta-nav.css","./nav.css":"css/nav.css","./featured-items.css":"css/featured-items.css","./location.css":"css/location.css","./footer.css":"css/footer.css","_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../img/sep01.png":[["sep01.48002d69.png","img/sep01.png"],"img/sep01.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/style.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./settings.css":"css/settings.css","./sale-banner.css":"css/sale-banner.css","./meta-nav.css":"css/meta-nav.css","./nav.css":"css/nav.css","./featured-items.css":"css/featured-items.css","./location.css":"css/location.css","./footer.css":"css/footer.css","./separators.css":"css/separators.css","_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -248,7 +253,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53518" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64072" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
