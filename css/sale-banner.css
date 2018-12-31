@@ -1,0 +1,12 @@
+.sale-banner {
+  background: #ffee93;
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.banner-hidden {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}

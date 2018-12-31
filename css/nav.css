@@ -1,0 +1,69 @@
+@import "./search.css";
+@import "./dropdowns.css";
+
+nav {
+  background: #669966;
+  overflow: hidden;
+}
+
+.logo {
+  height: 100%;
+  width: 100px;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 20px; /* slight optical adjustment */
+}
+
+nav ul li {
+  height: 100%;
+  line-height: 4rem;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+nav ul a {
+  position: relative; /* for pseudo element */
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .75rem;
+  color: #f0f7f4;
+  height: 100%;
+  display: inline-block;
+}
+
+nav ul a::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: .25rem;
+  width: 100%;
+  transform: scaleX(0);
+  background: #ffee93;
+  transition: transform 0.2s ease;
+}
+
+/* too much work to work with jquery :/ */
+/* nav ul a:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
+} */
+
+.menu-item--not-active {
+  color: rgba(240, 247, 244, .5);
+}
+
+nav ul button {
+  color: #f0f7f4;
+  display: block;
+  margin-top: 24px;
+}
+
+nav ul a,
+nav ul button {
+  transition: color .2s ease;
+}

@@ -1,0 +1,145 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(102, 153, 102, .9);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#btn-search-close {
+  font-size: 2em;
+  position: absolute;
+  top: 1.25em;
+  right: 1.25em;
+}
+
+.search h4 {
+  font-size: 4rem;
+  text-align: left;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: 8vw;
+  line-height: 1;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.05em 0;
+  color: #f0f7f4;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  border-bottom: .25rem solid;
+}
+
+.search__input::placeholder { color: #4a664a; opacity: 1;}
+
+.search__info {
+  font-size: 90%;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  padding: 0.85em 0;
+  text-align: right;
+  color: #f0f7f4;
+  margin-bottom: 2rem;
+}
+
+.search__related {
+  display: flex;
+}
+
+.search__suggestion {
+  width: 33.33%;
+  text-align: left;
+}
+
+.search__suggestion h3 {
+  text-transform: uppercase;
+  font-size: .75rem;
+  margin-bottom: .75rem;
+  color: rgba(40, 40, 40, 1);
+}
+
+.search__suggestion ul {
+  list-style: none;
+}
+
+.search__suggestion:nth-child(2) {
+  margin: 0 3em;
+}
+
+
+/* bg images */
+.search__suggestion > div > * {
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  transition: filter .5s ease,
+              opacity .5s ease;
+  opacity: .5;
+}
+.search__suggestion > div > *:hover { filter: grayscale(0); opacity: 1; cursor: pointer; }
+
+.search__suggestion:nth-child(1) div div:nth-child(1) { background-image: url(https://source.unsplash.com/random); }
+.search__suggestion:nth-child(1) div div:nth-child(2) { background-image: url(https://source.unsplash.com/random); }
+.search__suggestion:nth-child(1) div div:nth-child(3) { background-image: url(https://source.unsplash.com/random); }
+
+.search__suggestion:nth-child(2) div div:nth-child(1) { background-image: url(https://source.unsplash.com/random); }
+.search__suggestion:nth-child(2) div div:nth-child(2) { background-image: url(https://source.unsplash.com/random); }
+.search__suggestion:nth-child(2) div div:nth-child(3) { background-image: url(https://source.unsplash.com/random); }
+
+.search__suggestion:nth-child(3) div div:nth-child(1) { background-image: url(https://source.unsplash.com/random); }
+.search__suggestion:nth-child(3) div div:nth-child(2) { background-image: url(https://source.unsplash.com/random); }
+.search__suggestion:nth-child(3) div div:nth-child(3) { background-image: url(https://source.unsplash.com/random); }
+
+
+/* transitions! */
+.search {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.search--open {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.search__form {
+  opacity: 0;
+  transform: scale3d(0.8, 0.8, 1);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.search--open .search__form {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+.search__suggestion {
+  opacity: 0;
+  transform: translate3d(0, -30px, 0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.search--open .search__suggestion {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.search--open .search__suggestion:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.search--open .search__suggestion:nth-child(3) {
+  transition-delay: 0.2s;
+}

@@ -1,0 +1,34 @@
+.img {
+  background-image: url(https://source.unsplash.com/random);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-vertical .img {
+  height: 400px;
+  width: 100%;
+  border-bottom: 1px solid #b3bfb8;
+}
+.card-vertical .text {
+  height: 22rem;
+}
+
+.card-horizontal .img {
+  width: 50%;
+  border-right: 1px solid #669966;
+}
+
+.card-full {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card .text strong span {
+  display: inline-block;
+  position: relative;
+  top: -.25rem;
+  height: 1px;
+  width: 3rem;
+  margin: 0 9px;
+  background-color: #282828;
+}

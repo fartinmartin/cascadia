@@ -1,0 +1,41 @@
+.dropdowns {
+  position: relative;
+  height: 0;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.dropdown--active {
+  display: block;
+}
+
+.subcategory:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.dropdown h4 {
+  font-size: 1.525rem;
+}
+
+.dropdown h5 {
+  text-transform: uppercase;
+  font-size: .75rem;
+  margin-bottom: .75rem;
+  color: rgba(102, 153, 102, .8);
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #282828;
+  font-size: .8rem;
+  margin-bottom: .35rem;
+}
+
+.dropdown li a:hover {
+  padding-bottom: .025rem;
+  border-bottom: 1px solid #282828;
+}
