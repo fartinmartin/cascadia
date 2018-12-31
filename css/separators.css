@@ -1,0 +1,15 @@
+.mask {
+  mask-image:
+    linear-gradient(to bottom, transparent 5%, black 45%),
+    linear-gradient(to top, transparent 5%, black 45%);
+  mask-composite: intersect;
+  }
+
+#sep1 {
+  background-image: url("../img/sep01.png");
+
+  background-size: cover;
+  background-position: center;
+
+  height: 30rem;
+}

@@ -68,3 +68,28 @@ nav ul a,
 nav ul button {
   transition: color .2s ease;
 }
+
+/* gross centering fix */
+.meta-nav li,
+nav li {
+  display: block;
+  height: 100%;
+}
+
+.meta-nav li { line-height: 32px; }
+nav li a { line-height: 64px; }
+nav li a:hover { border: none; }
+
+.meta-nav li::before,
+nav li:not(:last-child)::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.meta-nav li a,
+nav li a {
+  display: inline-block;
+  vertical-align: middle;
+}
