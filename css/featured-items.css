@@ -1,34 +1,75 @@
-.img {
-  background-image: url(https://source.unsplash.com/random);
+.featured-items {
+  background: white;
+}
+
+.card > div, .card__img {
+  background-color: rgba(102, 153, 102, .2);
   background-size: cover;
   background-position: center;
+  background-blend-mode: multiply;
 }
 
-.card-vertical .img {
-  height: 400px;
-  width: 100%;
-  border-bottom: 1px solid #b3bfb8;
-}
-.card-vertical .text {
-  height: 22rem;
-}
-
-.card-horizontal .img {
-  width: 50%;
-  border-right: 1px solid #669966;
-}
-
-.card-full {
+.card {
+  padding: 1rem;
   color: white;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.card .text strong span {
+.card #featured--outdoor,
+.card #featured--outdoor a {
+  color: #282828;
+  text-shadow: none;
+}
+
+.card #featured--outdoor span {
+  background-color: #282828;
+  box-shadow: none;
+}
+
+.card span {
   display: inline-block;
   position: relative;
   top: -.25rem;
   height: 1px;
   width: 3rem;
   margin: 0 9px;
-  background-color: #282828;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card__text {
+  transform: translateY(2rem);
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+.card__text a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.035rem;
+  color: white;
+
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  will-change: opacity;
+}
+
+.card__text a:after {
+  content: "➤";
+  margin-left: 5px;
+}
+
+.card:hover .card__text { transform: translateY(0); }
+.card:hover .card__text a { opacity: 1; border: 0; }
+
+#featured--tables { background-image: url("../img/dining01.jpg"); }
+#featured--outdoor { background-color: #ffee93; }
+#featured--outdoor .card__img { background-image: url("../img/outdoor01.jpg"); }
+#featured--chairs { background-color: #b3bfb8; }
+#featured--chairs .card__img {
+  background-image: url("../img/chair02.jpg");
+  background-position: bottom;
+  background-blend-mode: normal;
 }

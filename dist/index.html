@@ -15,6 +15,10 @@
 
   <!-- my styles -->
   <link rel="stylesheet" href="/style.78032849.css">
+
+  <!-- maps -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css" rel="stylesheet">
 <script src="/style.78032849.js"></script></head>
 
 <body>
@@ -555,66 +559,84 @@
     </div>
   </header>
 
-  <section class="featured-items">
-    <div class="container mx-auto px-4 flex flex-wrap p-6">
-      <div class="card card-full flex overflow-hidden shadow" id="tables">
-        <div class="img img-full text flex flex-col justify-between p-12 w-full">
-          <strong class="inline-block pb-4">Dining <span></span> Tables</strong>
-          <div class="heading relative">
-            <h2 class="pt-16 pb-12">New and on sale: Cosm Chair Instantly responds to your body.</h2>
-            <a href="#">Shop all Dining Tables</a>
+  <section class="featured-items py-16">
+    <div class="container mx-auto flex flex-wrap">
+      <div class="card w-full overflow-hidden">
+        <div id="featured--tables">
+          <div class="flex flex-col justify-between p-8">
+            <h4 class="inline-block">Dining <span></span> Tables</h4>
+            <div class="card__text relative">
+              <h2 class="pt-16 pb-2">New and on sale: Cosm Chair Instantly responds to your body.</h2>
+              <a href="#">Shop all Dining Tables</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card card-vertical overflow-hidden shadow" id="chairs">
-        <div class="img"></div>
-        <div class="text flex flex-col justify-between p-12">
-          <strong class="inline-block pb-4">Living <span></span> Lounge Chairs</strong>
-          <div class="heading relative">
-            <h2 class="pb-12">New and on sale: Cosm Chair Instantly responds to your body.</h2>
-            <a href="#">Shop all Lounge Chairs</a>
+
+      <div class="card w-2/3 overflow-hidden">
+        <div id="featured--outdoor" class="flex h-full">
+          <div class="card__img w-full"></div>
+          <div class="flex flex-col justify-between p-8 w-1/2">
+            <h4 class="inline-block">Outdoor <span></span> Tables</h4>
+            <div class="card__text relative">
+              <h2 class="pt-12 pb-4">New and on sale: Cosm Chair Instantly responds to your body.</h2>
+              <a href="#">Shop all Outdoor</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card card-horizontal flex overflow-hidden shadow" id="storage">
-        <div class="img"></div>
-        <div class="text flex flex-col justify-between p-12 w-1/2">
-          <strong class="inline-block pb-4">Bedroom <span></span> Storage</strong>
-          <div class="heading relative">
-            <h2 class="pt-16 pb-12">New and on sale: Cosm Chair Instantly responds to your body.</h2>
-            <a href="#">Shop all Dining Tables</a>
+      <div class="card w-1/3 overflow-hidden">
+        <div id="featured--chairs">
+          <div class="card__img h-64"></div>
+          <div class="flex flex-col justify-between p-8">
+            <h4 class="inline-block">Living <span></span> Lounge Chairs</h4>
+            <div class="card__text relative">
+              <h2 class="pt-12 pb-4">New and on sale: Cosm Chair Instantly responds to your body.</h2>
+              <a href="#">Shop all Living Room Seating</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section id="location">
+    <div class="container mx-auto px-4 py-16">
+      <div class="flex shadow">
+        <div class="w-1/4 p-8 flex flex-col location__info">
+          <div class="mb-auto">
+            <h4 class="mb-8">Nearest Location</h4>
+            <div class="mb-6">
+              <h5 class="mb-2">Address</h5>
+              <span class="block">1701 Broadway</span>
+              <span class="block">Seattle, WA 98122</span>
+            </div>
+            <h5 class="mb-2">Hours</h5>
+            <span class="block">Monday-Friday : 9am-7pm</span>
+            <span class="block">Saturday-Sunday : 10am-6pm</span>
+          </div>
+          <a href="" class="findloc">Find other locations</a>
+        </div>
+        <div id="map" style="width: 75%; height: 300px;"></div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="container mx-auto px-4 py-16 ">
+      <div href="" class="logo-black"></div>
       <div class="flex justify-between items-start">
-        <a href="" class="logo-black"></a>
         <div class="flex">
           <div class="mr-12">
-            <form class="" action="">
-              <h5 class="bold" for="email">Newsletter</h5>
-              <div class="flex">
-                <input type="email" placeholder="your@email.com" name="" id="" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-grey-light placeholder-grey-darkest bg-grey-lighter py-2 pr-2 pl-2 block w-full appearance-none leading-normal ds-input">
-                <button type="submit" class="w-24 text-white font-bold py-2 px-2">Sign Up</button></div>
-            </form>
-          </div>
-          <div class="mr-12">
-            <h5>Catalog</h5>
-            <div class="w-32 h-48" id="catalog"></div>
-          </div>
-          <div class="mr-12">
             <h5>About Us</h5>
-            <ul class="list-reset">
+            <ul class="list-reset h-48 flex flex-col">
               <li><a href="">About Cascadia</a></li>
               <li><a href="">Our Mission</a></li>
               <li><a href="">Responsible Materials</a></li>
               <li><a href="">Careers</a></li>
               <li><a href="">Affiliate Program</a></li>
-              <li><a href="">Site Map </a></li>
+              <li class="mb-auto"><a href="">Site Map </a></li>
+              <li class="mt-auto"><a href="tel:123456789">+1 (206) 555-0000</a></li>
             </ul>
           </div>
           <div class="mr-12">
@@ -627,10 +649,11 @@
               <li><a href="">3D Room Planner</a></li>
             </ul>
           </div>
-          <div class="">
+          <div class="mr-12">
             <h5>Customer Service</h5>
             <ul class="list-reset">
               <li><a href="">Contact Us</a></li>
+              <li><a href="">Store Locations</a></li>
               <li><a href="">Shipping Information</a></li>
               <li><a href="">Returns & Exchanges</a></li>
               <li><a href="">FAQs</a></li>
@@ -638,21 +661,36 @@
             </ul>
           </div>
         </div>
+        <div class="flex">
+          <div class="mr-12">
+            <form class="" action="">
+              <h5 class="bold" for="email">Newsletter</h5>
+              <div class="flex">
+                <input type="email" placeholder="your@email.com" name="" id="" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-grey-light placeholder-grey-darkest bg-grey-lighter py-2 pr-2 pl-2 block w-full appearance-none leading-normal ds-input">
+                <button type="submit" class="w-24 text-white font-bold py-2 px-2">Sign Up</button>
+              </div>
+            </form>
+            <p>Sign up to receive information on sales and new arrivals.</p>
+          </div>
+          <div class="">
+            <h5>Catalog</h5>
+            <div class="w-32 h-48" id="catalog"></div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="the-cellar">
-      <div class="container mx-auto px-4 py-16 flex justify-between align-center">
-        <div class="w-1/3">© 2019 Cascadia</div>
+      <div class="container mx-auto px-4 py-6 flex justify-between align-center">
+        <div class="w-1/3">&copy; Cascadia</div>
         <div class="w-1/3 text-center"></div>
         <div class="w-1/3 text-right">
           <ul class="list-reset flex justify-end" id="social">
+            <li><a href=""><i class="fab fa-lg fa-facebook-f"></i></a></li>
             <li><a href=""><i class="fab fa-lg fa-instagram"></i></a></li>
             <li><a href=""><i class="fab fa-lg fa-pinterest"></i></a></li>
-            <li><a href=""><i class="fab fa-lg fa-facebook"></i></a></li>
             <li><a href=""><i class="fab fa-lg fa-tumblr"></i></a></li>
             <li><a href=""><i class="fab fa-lg fa-youtube"></i></a></li>
             <li><a href=""><i class="fab fa-lg fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-lg fa-medium-m"></i></a></li>
           </ul>
         </div>
       </div>
@@ -661,6 +699,16 @@
   <!-- jQuery + jQueryUI -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- map -->
+  <script>mapboxgl.accessToken = 'pk.eyJ1IjoiZmFydGlubWFydGluIiwiYSI6ImNqcWNqNTN1MTB5N2k0M3FwZXY4c3A2eDYifQ.XiSWoq3dvLYnO-ZoZjIdNg';
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/fartinmartin/cjqckelr1ecx32rp7z39cj9nw',
+  center: [-75.911136, 42.097267],
+  zoom: 13.0
+}); // Add zoom and rotation controls to the map.
+
+map.addControl(new mapboxgl.NavigationControl());</script>
   <!-- my scripts! -->
   <script src="/app.c3f9f951.js"></script>
 </body>

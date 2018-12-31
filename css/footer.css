@@ -2,18 +2,9 @@ footer {
   background-color: #ffffff;
 }
 
-.logo-black {
-  height: 4rem;
-  margin-top: -1.5rem;
-  width: 100px;
-  background-image: url("../img/logo-black.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: 20px; /* slight optical adjustment */
-}
-
-a.logo-black:hover {
-  border: 0;
+footer p {
+  font-size: .8rem;
+  margin: 1rem 0;
 }
 
 #catalog {
@@ -81,4 +72,18 @@ footer button:hover {
 #the-cellar {
   background: #c7d9c7;
   font-size: .8rem;
+}
+
+.logo-black {
+  height: 4rem;
+  margin-top: -2rem;
+  width: 100px;
+  background-image: url("../img/logo-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 20px; /* slight optical adjustment */
+}
+
+#the-cellar a:hover {
+  border: 0;
 }

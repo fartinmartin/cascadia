@@ -5,3 +5,25 @@ body {
   font-weight: 300;
   font-style: normal;
 }
+
+h5 {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+p, span, a {
+  font-size: .8rem;
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+  color: #282828;
+  font-size: .8rem;
+  margin-bottom: .35rem;
+}
+
+a:hover {
+  padding-bottom: .025rem;
+  border-bottom: 1px solid #282828;
+}
