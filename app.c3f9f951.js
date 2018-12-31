@@ -196,6 +196,14 @@ function dropdown() {
   $("#btn-search").hover(function () {
     $(this).removeClass("menu-item--not-active");
     $("nav a").addClass("menu-item--not-active");
+    $(".dropdown").removeClass("dropdown--active");
+  }, function () {
+    $(this).removeClass("menu-item--not-active");
+    $("nav a").removeClass("menu-item--not-active");
+  });
+  $(".meta-nav").hover(function () {
+    $("nav li > *").removeClass("menu-item--not-active");
+    $(".dropdown").removeClass("dropdown--active");
   });
 }
 },{}],"js/app.js":[function(require,module,exports) {
@@ -238,7 +246,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49775" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53518" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
