@@ -201,7 +201,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./search.css":"css/search.css","./dropdowns.css":"css/dropdowns.css","./../img/logo.svg":[["logo.f1d8a4c6.svg","img/logo.svg"],"img/logo.svg"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/featured-items.css":[function(require,module,exports) {
+},{"./search.css":"css/search.css","./dropdowns.css":"css/dropdowns.css","./../img/logo.svg":[["logo.f1d8a4c6.svg","img/logo.svg"],"img/logo.svg"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/hero.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../img/hero04.jpg":[["hero04.004a1630.jpg","img/hero04.jpg"],"img/hero04.jpg"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/featured-items.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -231,7 +236,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./settings.css":"css/settings.css","./sale-banner.css":"css/sale-banner.css","./meta-nav.css":"css/meta-nav.css","./nav.css":"css/nav.css","./featured-items.css":"css/featured-items.css","./socialshares.css":"css/socialshares.css","./location.css":"css/location.css","./footer.css":"css/footer.css","./separators.css":"css/separators.css","_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./settings.css":"css/settings.css","./sale-banner.css":"css/sale-banner.css","./meta-nav.css":"css/meta-nav.css","./nav.css":"css/nav.css","./hero.css":"css/hero.css","./featured-items.css":"css/featured-items.css","./socialshares.css":"css/socialshares.css","./location.css":"css/location.css","./footer.css":"css/footer.css","./separators.css":"css/separators.css","_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -258,7 +263,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64934" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49916" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
