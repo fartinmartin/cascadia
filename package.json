@@ -15,6 +15,7 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "jquery-ui": "^1.12.1",
-    "npm": "^6.5.0"
+    "npm": "^6.5.0",
+    "siema": "^1.5.1"
   }
 }
