@@ -26,7 +26,7 @@ a {
 
 a:hover {
   padding-bottom: .025rem;
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #669966;
 }.sale-banner {
   background: #ffee93;
   font-size: .75rem;
@@ -232,19 +232,12 @@ a:hover {
   font-size: .75rem;
   margin-bottom: .75rem;
   color: rgba(102, 153, 102, .8);
+}header {
+  /* bring shadow back! */
+  position: relative;
 }
 
-.dropdown li a {
-  text-decoration: none;
-  color: #282828;
-  font-size: .8rem;
-  margin-bottom: .35rem;
-}
-
-.dropdown li a:hover {
-  padding-bottom: .025rem;
-  border-bottom: 1px solid #282828;
-}nav {
+nav {
   background: #669966;
   overflow: hidden;
 }
@@ -279,7 +272,9 @@ nav ul a {
   display: inline-block;
 }
 
-nav ul a::after {
+/* tab effect that was too much work to work with jquery :/ */
+
+/* nav ul a::after {
   position: absolute;
   content: '';
   left: 0;
@@ -289,9 +284,8 @@ nav ul a::after {
   transform: scaleX(0);
   background: #ffee93;
   transition: transform 0.2s ease;
-}
+} */
 
-/* too much work to work with jquery :/ */
 /* nav ul a:hover::after {
   transform: scaleX(1);
   transition: transform 0.3s ease;
@@ -335,6 +329,12 @@ nav li:not(:last-child)::before {
 nav li a {
   display: inline-block;
   vertical-align: middle;
+}.hero {
+  background: url("hero04.004a1630.jpg");
+  background-size: cover;
+  background-position: bottom;
+
+  height: 30rem;
 }.featured-items {
   background: white;
 }
@@ -508,17 +508,6 @@ footer h5 {
   color: rgba(102, 153, 102, .8);
 }
 
-footer a {
-  text-decoration: none;
-  color: #282828;
-  font-size: .8rem;
-  margin-bottom: .35rem;
-}
-
-footer a:hover {
-  padding-bottom: .025rem;
-  border-bottom: 1px solid #282828;
-}
 
 footer input {
   background: #f0f7f4;

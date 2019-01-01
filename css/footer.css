@@ -29,17 +29,6 @@ footer h5 {
   color: rgba(102, 153, 102, .8);
 }
 
-footer a {
-  text-decoration: none;
-  color: #282828;
-  font-size: .8rem;
-  margin-bottom: .35rem;
-}
-
-footer a:hover {
-  padding-bottom: .025rem;
-  border-bottom: 1px solid #282828;
-}
 
 footer input {
   background: #f0f7f4;

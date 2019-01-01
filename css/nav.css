@@ -1,6 +1,11 @@
 @import "./search.css";
 @import "./dropdowns.css";
 
+header {
+  /* bring shadow back!j */
+  position: relative;
+}
+
 nav {
   background: #669966;
   overflow: hidden;
@@ -36,7 +41,9 @@ nav ul a {
   display: inline-block;
 }
 
-nav ul a::after {
+/* tab effect that was too much work to work with jquery :/ */
+
+/* nav ul a::after {
   position: absolute;
   content: '';
   left: 0;
@@ -46,9 +53,8 @@ nav ul a::after {
   transform: scaleX(0);
   background: #ffee93;
   transition: transform 0.2s ease;
-}
+} */
 
-/* too much work to work with jquery :/ */
 /* nav ul a:hover::after {
   transform: scaleX(1);
   transition: transform 0.3s ease;
