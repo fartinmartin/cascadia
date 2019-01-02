@@ -330,11 +330,16 @@ nav li a {
   display: inline-block;
   vertical-align: middle;
 }.hero {
-  background: url("hero04.004a1630.jpg");
+  background: url("hero05.ad2cadd1.jpg");
   background-size: cover;
   background-position: bottom;
 
-  height: 30rem;
+  height: 40rem;
+}
+
+.hero p {
+  max-width: 30rem;
+  font-size: 1rem;
 }.featured-items {
   background: white;
 }
@@ -560,6 +565,27 @@ footer button:hover {
     linear-gradient(to top, transparent 5%, black 45%);
   mask-composite: intersect;
   }
+
+#sep01 {
+  display: none;
+  position: relative;
+}
+
+#sep01 div {
+  position: absolute;
+  left: 0;
+  top:0;
+  transform: scale(4);
+
+  background-image: url("chair.265bd294.png");
+
+  background-size: cover;
+  background-position: center;
+
+  height: 30rem;
+  width: 30rem;
+  z-index: -100;
+}
 
 #sep1 {
   background-image: url("sep01.48002d69.png");
