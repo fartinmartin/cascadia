@@ -1,7 +1,12 @@
 .hero {
-  background: url("../img/hero04.jpg");
+  background: url("../img/hero05.jpg");
   background-size: cover;
   background-position: bottom;
 
-  height: 30rem;
+  height: 40rem;
+}
+
+.hero p {
+  max-width: 30rem;
+  font-size: 1rem;
 }

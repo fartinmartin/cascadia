@@ -5,6 +5,27 @@
   mask-composite: intersect;
   }
 
+#sep01 {
+  display: none;
+  position: relative;
+}
+
+#sep01 div {
+  position: absolute;
+  left: 0;
+  top:0;
+  transform: scale(4);
+
+  background-image: url("../img/chair.png");
+
+  background-size: cover;
+  background-position: center;
+
+  height: 30rem;
+  width: 30rem;
+  z-index: -100;
+}
+
 #sep1 {
   background-image: url("../img/sep01.png");
 
